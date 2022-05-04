@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <input type="text" id="number">
+    <p id="out">Output</p>
+    <button onclick="run()">Submit</button>
+
+    <script>
+        const para = document.getElementById("out")
+        async function run(){
+            var num = document.getElementById("number").value
+            let data = await fetch('http://127.0.0.1:5000', {
+                method : 'POST',
+                headers : {
+                    'Content-Type' : 'application/json'
+                },
+                body : JSON.stringify({
+                    number : num
+                })
+            })
+            dataa = await data.json()
+            out.innerHTML = dataa.number
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

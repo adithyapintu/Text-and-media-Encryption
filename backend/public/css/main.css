@@ -1,0 +1,41 @@
+.textClass:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+#hideEncrypt{
+    display: none;
+}
+
+#encryptContainer{
+    display: none;
+}
+#card-to-hidden{
+    display: none;
+}
+
+#backBtn{
+    display: none;
+}
+
+input{
+    background-color: gainsboro;
+    color: black;
+
+}
+#imageCard{
+    display: none;
+    text-align: center;
+}
+#response{
+    overflow-x: auto;
+}
+
+button{
+    width: 100px;
+    background-color: orange;
+    margin-left: 7vw;
+    border: 2px solid gold;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px black;
+}
